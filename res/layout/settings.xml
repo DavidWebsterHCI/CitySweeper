@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical" >
+
+    <TextView
+    	android:id="@+id/textView1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="50dp"
+    	android:text="" />
+
+    <CheckBox
+    	android:id="@+id/checkBoxAnon"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="Do not display my name." />
+
+    <TextView
+    	android:id="@+id/textAnon"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="12dp"
+    	android:layout_marginRight="12dp"
+    	android:layout_marginBottom="30dp"
+    	android:text="When this feature is enabled, your name will\nnot shown. Instead, you will be labeled as Anonymous." />
+
+    <Button
+    	android:id="@+id/buttonOK"
+    	style="@style/home_buttons_style"
+    	android:layout_width="150dp"
+    	android:layout_height="wrap_content"
+    	android:text="Submit" />
+
+    <TextView
+    	android:id="@+id/textResponse"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="30dp"
+    	android:text="" />
+    
+</LinearLayout>

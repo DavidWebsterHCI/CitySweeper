@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal" >
+
+		<TextView
+			android:id="@+id/category"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginBottom="6dp"
+			android:textColor="@color/textcolor"
+			android:textStyle="bold"
+			android:textSize="16sp"
+			android:text="Category" />
+		
+		<TextView
+			android:id="@+id/date"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginBottom="6dp"
+			android:textColor="@color/textcolor"
+			android:textSize="16sp"
+			android:text="date" />
+
+<!-- 		<TableLayout -->
+<!-- 			android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="wrap_content" -->
+<!-- 			android:orientation="vertical" > -->
+
+<!-- 			<TableRow -->
+<!-- 				android:id="@+id/tableRow1" -->
+<!-- 				android:layout_width="fill_parent" -->
+<!-- 				android:layout_height="wrap_content" > -->
+
+<!-- 				<TextView -->
+<!-- 					android:id="@+id/date" -->
+<!-- 					android:layout_width="0dp" -->
+<!-- 					android:layout_weight="3" -->
+<!-- 					android:layout_height="wrap_content" -->
+<!-- 					android:layout_marginLeft="6dp" -->
+<!-- 					android:textColor="@color/textcolor" -->
+<!-- 					android:textSize="16sp" -->
+<!-- 					android:text="date" /> -->
+
+<!-- 				<TextView -->
+<!-- 					android:id="@+id/status" -->
+<!-- 					android:layout_width="0dp" -->
+<!-- 					android:layout_weight="1" -->
+<!-- 					android:layout_height="wrap_content" -->
+<!-- 					android:layout_marginRight="10dp" -->
+<!-- 					android:textSize="16sp" -->
+<!-- 					android:textColor="@color/blue" -->
+<!-- 					android:text="Status" /> -->
+<!-- 			</TableRow> -->
+<!-- 		</TableLayout> -->
+			
+		<fragment
+        	android:id="@+id/map"
+        	class="com.google.android.gms.maps.SupportMapFragment"
+       	 	android:layout_width="match_parent"
+        	android:layout_height="200dp"
+        	android:layout_margin="6dp" />
+
+		<TextView
+			android:id="@+id/reported_by"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginBottom="1dp"
+			android:textSize="16sp"
+			android:text="Anonymous user" />
+
+		<TextView
+			android:id="@+id/address"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginBottom="1dp"
+			android:textSize="16sp"
+			android:textStyle="italic"
+			android:text="Street Address" />
+		
+		<TextView
+			android:id="@+id/textdescription"
+			android:background="@drawable/edittext_background"
+			android:layout_margin="6dip"
+			android:padding="6dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="description"
+			/>
+		
+		<TextView
+			android:id="@+id/thumb_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:textColor="@color/textcolor"
+			android:text="Click the thumb to see original photo." />
+		
+		<ImageView
+			android:id="@+id/show_large_image"
+			android:background="@drawable/buttons_shape"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_margin="6dp"
+			android:padding="3dip"
+			android:scaleType="fitXY"
+			android:onClick="thumbClick"
+			android:src="@drawable/imagebackground" />
+
+<!-- 		<TableLayout -->
+<!-- 			android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="wrap_content" -->
+<!-- 			android:orientation="vertical" > -->
+
+<!-- 			<TableRow -->
+<!-- 				android:id="@+id/tableRow2" -->
+<!-- 				android:layout_width="fill_parent" -->
+<!-- 				android:layout_height="wrap_content" -->
+<!-- 				android:gravity="center_horizontal" > -->
+
+<!-- 				<TextView -->
+<!-- 					android:id="@+id/num_follows" -->
+<!-- 					android:layout_width="wrap_content" -->
+<!-- 					android:layout_height="wrap_content" -->
+<!-- 					android:layout_gravity="center" -->
+<!-- 					android:text="Followed: " /> -->
+
+<!-- 				<TextView -->
+<!-- 					android:id="@+id/num_comments" -->
+<!-- 					android:layout_width="wrap_content" -->
+<!-- 					android:layout_height="wrap_content" -->
+<!-- 					android:layout_gravity="center" -->
+<!-- 					android:text="Commented: " /> -->
+<!-- 			</TableRow> -->
+
+<!-- 			<TableRow -->
+<!-- 				android:id="@+id/tableRow3" -->
+<!-- 				android:layout_width="fill_parent" -->
+<!-- 				android:layout_height="wrap_content" -->
+<!-- 				android:gravity="center_horizontal" -->
+<!-- 				android:layout_marginBottom="2dp" > -->
+
+<!-- 				<Button -->
+<!-- 					style="@style/home_buttons_style" -->
+<!-- 					android:id="@+id/follow" -->
+<!-- 					android:layout_width="150dp" -->
+<!-- 					android:layout_height="wrap_content" -->
+<!-- 					android:text="Follow" /> -->
+
+<!-- 				<Button -->
+<!-- 					style="@style/home_buttons_style" -->
+<!-- 					android:id="@+id/comment" -->
+<!-- 					android:layout_width="150dp" -->
+<!-- 					android:layout_height="wrap_content" -->
+<!-- 					android:text="Comment" /> -->
+<!-- 			</TableRow> -->
+<!-- 		</TableLayout> -->
+
+		
+</LinearLayout>
+
+</ScrollView>

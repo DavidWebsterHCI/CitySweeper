@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<TableRow
+			android:id="@+id/tableRowPicture"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="1dp" >
+			
+			<TextView
+				android:id="@+id/blank1"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_weight="2"
+				android:text=""  />
+
+			<ImageView
+				android:id="@+id/imageViewPicture"
+				android:background="@drawable/buttons_shape"
+				android:layout_width="0dp"
+				android:layout_weight="3"
+				android:layout_height="100dp"
+				android:layout_margin="6dp"
+				android:padding="3dip"
+				android:scaleType="centerInside"
+				android:clickable="true"  
+ 				android:onClick="cameraClick"
+				android:src="@drawable/camera_logo_gray_70" />
+			
+			<TextView
+				android:id="@+id/blank1"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_weight="2"
+				android:text=""  />
+		</TableRow>
+		
+		<TableRow
+			android:id="@+id/tableRowLine"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+			
+			<ImageView
+				android:id="@+id/line"
+				android:layout_width="0dp"
+				android:layout_height="2dp"
+				android:layout_weight="1"
+				android:layout_marginLeft="6dp"
+				android:layout_marginRight="6dp"
+				android:background="@color/lihgt_gray" />
+			
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRowSpinner"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+
+			<Spinner
+				android:id="@+id/spinnerIssueCategory"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:entries="@array/issue_categories"
+				android:prompt="@string/spinner1_prompt" >
+			</Spinner>
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRowLabel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="1dip" >
+
+			<TextView
+				android:id="@+id/label"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="6"
+				android:layout_margin="6dp"
+				android:textColor="@color/textcolor"
+				android:text="Enter address below or use map to find location"  />
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRowAddress"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="1dip"
+			android:layout_marginBottom="10dip" >
+
+			<EditText
+				android:id="@+id/input_address"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="4"
+				android:background="@drawable/edittext_background"
+				android:padding="6dip"
+				android:singleLine="true"
+				android:inputType="textNoSuggestions"
+				android:layout_marginLeft="6dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginRight="2dp"
+				android:ems="12"
+				android:hint="Address" >
+			</EditText>
+			
+			<ImageButton
+				android:id="@+id/ibMap"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginRight="6dp"
+				android:layout_marginLeft="6dp"
+				android:background="@drawable/buttons_shape"
+				android:contentDescription="use_map"
+				android:padding="5dip"
+				android:src="@drawable/ic_action_map" />
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRowDescription"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp" >
+
+			<EditText
+				android:id="@+id/input_description"
+				android:background="@drawable/edittext_background"
+				android:layout_margin="6dp"
+				android:padding="6dp"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:lines="4"
+				android:inputType="text|textMultiLine"
+				android:scrollbars="vertical"
+				android:ems="12"
+				android:hint="Enter desctiption (required)" >
+			</EditText>
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRowButtons"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal" >
+
+			<Button
+				android:id="@+id/button_clear"
+				style="@style/home_buttons_style"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="Reset Form" />
+
+			<Button
+				android:id="@+id/buttonSubmit"
+				style="@style/home_buttons_style"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="Submit" />
+		</TableRow>
+	</TableLayout>
+
+</ScrollView>

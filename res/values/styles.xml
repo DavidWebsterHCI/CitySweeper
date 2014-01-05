@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+		<item name="android:listViewStyle">@style/MyListView</item>
+	</style>
+
+	<style name="MyListView" parent="@android:Widget.Holo.Light.ListView">
+		<item name="android:fastScrollEnabled">true</item>
+    	<item name="android:footerDividersEnabled">false</item>
+    	<item name="android:divider">@color/blue</item>
+		<item name="android:dividerHeight">1dp</item>
+	</style>
+
+	<style name="home_land_buttons_style" parent="android:Widget.Holo.Button">
+		<item name="android:background">@drawable/buttons_shape</item>
+		<item name="android:textColor">@color/green</item>
+		<item name="android:textSize">18dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/button_text_color</item>
+	</style>
+
+	<style name="home_buttons_style" parent="android:Widget.Holo.Button">
+		<item name="android:background">@drawable/buttons_shape</item>
+		<item name="android:layout_margin">6dp</item>
+		<item name="android:textSize">16dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/button_text_color</item>
+	</style>
+
+</resources>

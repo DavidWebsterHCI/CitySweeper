@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+	<TableLayout
+		android:layout_height="fill_parent"
+		android:layout_weight="3"
+		android:layout_width="wrap_content" >
+
+		<TableRow
+			android:id="@+id/tableRow1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30dip" >
+
+			<Button
+				android:id="@+id/new_report"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="@drawable/buttons_shape"
+				android:layout_margin="6dip"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:text="New Issue"
+				android:textColor="@drawable/button_text_color" />
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRow2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+
+			<Button
+				android:id="@+id/my_issues"
+				style="@style/home_buttons_style"
+				android:layout_marginTop="12dp"
+				android:layout_marginBottom="12dp"
+				android:layout_marginLeft="6dp"
+				android:layout_marginRight="6dp"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="My Issues"
+				android:layout_weight="1" />
+
+			<Button
+				android:id="@+id/recent_issues"
+				style="@style/home_buttons_style"
+				android:layout_marginTop="12dp"
+				android:layout_marginBottom="12dp"
+				android:layout_marginLeft="6dp"
+				android:layout_marginRight="6dp"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="Recent Issues"
+				android:layout_weight="1" />
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRow3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+
+			<Button
+				android:id="@+id/settings"
+				style="@style/home_buttons_style"
+				android:layout_marginTop="12dp"
+				android:layout_marginBottom="12dp"
+				android:layout_marginLeft="6dp"
+				android:layout_marginRight="6dp"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="Settings"
+				android:layout_weight="1" />
+
+			<Button
+				android:id="@+id/followed_issues"
+				style="@style/home_buttons_style"
+				android:layout_marginTop="12dp"
+				android:layout_marginBottom="12dp"
+				android:layout_marginLeft="6dp"
+				android:layout_marginRight="6dp"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="Followed Issues"
+				android:layout_weight="1" />
+		</TableRow>
+	</TableLayout>
+
+	<ImageView
+		android:layout_gravity="center"
+		android:layout_height="wrap_content"
+		android:layout_width="0dp"
+		android:background="@drawable/domik_transparent"
+		android:contentDescription="logo"
+		android:layout_weight="2" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">CitySweeper</string>
+	<string name="about_title">About CitySweeper</string>
+	<string name="about">This app is created by David Webster and Yulia Bilochapka</string>
+	<string name="spinner1_prompt">Select issues category</string>
+	<string name="spinner2_prompt">Select neighborhood</string>
+
+	<string-array name="entries_list_preference">
+        <item>Option 01</item>
+        <item>Option 02</item>
+        <item>Option 03</item>  
+    </string-array>
+
+    <string-array name="entryvalues_list_preference">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>  
+    </string-array>
+	
+	<string-array name="issue_categories">
+		<item>Choose a category (required)</item>
+		<item>Bike rack damaged</item>
+		<item>City can damaged</item>
+		<item>Curb defect</item>
+		<item>Dangerous condition</item>
+		<item>Dumpster overflowing</item>
+		<item>Environmental issue</item>
+		<item>Garbage issue</item>
+		<item>Graffiti</item>
+		<item>Health hazard</item>
+		<item>Housing issue</item>
+		<item>Illegal dumping</item>
+		<item>Illegal posting</item>
+		<item>Kiosk or public toilet damaged</item>
+		<item>News rack damaged</item>
+		<item>Noise complaint</item>
+		<item>Other</item>
+		<item>Overgrowth near building</item>
+		<item>Overgrowth on vacant lot</item>
+		<item>Parking meter damaged</item>
+		<item>Pavement defect</item>
+		<item>Police issue</item>
+		<item>Pothole</item>
+		<item>Sewage back up</item>
+		<item>Side sewer odor</item>
+		<item>Side sewer vent cover damaged/missing</item>
+		<item>Side sewer water coming out</item>
+		<item>Sidewalk cleaning</item>
+		<item>Sidewalk defect</item>
+		<item>Street cleaning</item>
+		<item>Street sign damaged</item>
+		<item>Transportation issue</item>
+		<item>Tree damaged/overgrown</item>
+	</string-array>
+
+</resources>

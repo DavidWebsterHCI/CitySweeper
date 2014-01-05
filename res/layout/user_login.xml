@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal" >
+
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:stretchColumns="1" >
+
+			<!-- stretch second column zero based index -->
+
+			<TableRow>
+
+				<TextView
+					android:text="Email: "
+					android:id="@+id/TextView01"
+					android:layout_marginLeft="6dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+				</TextView>
+
+				<EditText
+					android:id="@+id/txtEmail"
+					android:hint="email"
+					android:singleLine="true"
+					android:inputType="textEmailAddress"
+					android:ems="10"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" >
+				</EditText>
+			</TableRow>
+
+			<TableRow>
+
+				<TextView
+					android:text="Password: "
+					android:id="@+id/TextView02"
+					android:layout_marginLeft="6dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+				</TextView>
+
+				<EditText
+					android:id="@+id/txtPwd"
+					android:hint="password"
+					android:singleLine="true"
+					android:inputType="textPassword"
+					android:ems="10"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" >
+				</EditText>
+			</TableRow>
+
+			<TableRow
+				android:layout_marginTop="30dp"
+				android:layout_marginBottom="6dp" >
+
+				<Button
+					android:id="@+id/buttonLogout"
+					android:background="@drawable/buttons_shape"
+					android:layout_margin="6dip"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="@drawable/button_text_color"
+					android:text="Logout" />
+
+				<Button
+					android:id="@+id/buttonLogin"
+					android:background="@drawable/buttons_shape"
+					android:layout_margin="6dip"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="@drawable/button_text_color"
+					android:text="Login" />
+			</TableRow>
+		</TableLayout>
+
+		<TextView
+			android:text=""
+			android:id="@+id/label_empty"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp" >
+		</TextView>
+
+		<TextView
+			android:text="Don&apos;t have a City Sweeper account yet?"
+			android:id="@+id/label_register"
+			android:textSize="16sp"
+			android:textColor="@color/textcolor"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+		</TextView>
+
+		<Button
+			android:id="@+id/buttonRegister"
+			style="@style/home_buttons_style"
+			android:layout_margin="6dip"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:text="Register" />
+	</LinearLayout>
+
+</ScrollView>
